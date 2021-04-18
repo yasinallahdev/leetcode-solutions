@@ -1,6 +1,9 @@
+#include <vector>
+#include <algorithm>
+
 class Solution {
 public:
-    int maxSubArray(vector<int>& nums) {
+    int maxSubArray(std::vector<int>& nums) {
         if(nums.size() > 1) {
             int smallestValue = *min_element(nums.begin(), nums.end());
             int currentSum = 0;
